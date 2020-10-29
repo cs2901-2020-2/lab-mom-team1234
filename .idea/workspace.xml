@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6c35102-26c8-47b1-8dfb-3e336b34050c" name="Default Changelist" comment="" />
+    <list default="true" id="fbd2a384-ff35-480a-a1a1-52aeec4039b3" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,32 +19,48 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+        <option name="mavenHome" value="$USER_HOME$/.m2/wrapper/dists/apache-maven-3.6.3-bin/1iopthnavndlasol9gbrbg6bf2/apache-maven-3.6.3" />
       </MavenGeneralSettings>
     </option>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
-  <component name="ProjectId" id="1jT1UulOYABg3L3pKzyZiXKdnoI" />
+  <component name="ProjectId" id="1jYOuM3nJRJ0HRnAuoR7ZoIznvP" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Suscriber/src/main/java" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Suscriber/src/main/java" />
+      <recent name="$PROJECT_DIR$/Publisher/src/main/java" />
+    </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
+    <configuration name="RabbitmqPublisherApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="rabbitmq-publisher" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.publisher.rabbitmqpublisher.RabbitmqPublisherApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="rabbitmq-publisher" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.publisher.rabbitmqpublisher.RabbitmqPublisherApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -50,26 +69,96 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f6c35102-26c8-47b1-8dfb-3e336b34050c" name="Default Changelist" comment="" />
-      <created>1603813288810</created>
+      <changelist id="fbd2a384-ff35-480a-a1a1-52aeec4039b3" name="Default Changelist" comment="" />
+      <created>1603977783174</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1603813288810</updated>
-      <workItem from="1603813290854" duration="407000" />
+      <updated>1603977783174</updated>
+      <workItem from="1603977784441" duration="2615000" />
+      <workItem from="1603980834870" duration="456000" />
+      <workItem from="1603983337267" duration="228000" />
     </task>
+    <task id="LOCAL-00001" summary="Estructura - OK">
+      <created>1603981164812</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603981164812</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Suscriber OK">
+      <created>1603983355107</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603983355107</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Estructura - OK" />
+    <MESSAGE value="Suscriber OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="Suscriber OK" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="958" y="267" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1603813691714">
+    <state x="721" y="232" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603977995155">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="958" y="267" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1603813691714" />
-    <state x="694" y="492" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603813294702">
+    <state x="721" y="232" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1603977995155" />
+    <state x="994" y="379" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1603977965675">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="694" y="492" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1792.1097@0.23.1792.1097" timestamp="1603813294702" />
+    <state x="994" y="379" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1603977965675" />
+    <state x="634" y="325" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603981057148">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="634" y="325" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1603981057148" />
+    <state x="301" y="147" key="CommitChangelistDialog2" timestamp="1603983354971">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="301" y="147" key="CommitChangelistDialog2/0.23.1792.1097@0.23.1792.1097" timestamp="1603983354971" />
+    <state width="1750" height="303" key="GridCell.Tab.0.bottom" timestamp="1603980516019">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="1750" height="303" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1603980516019" />
+    <state width="1750" height="303" key="GridCell.Tab.0.center" timestamp="1603980516018">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="1750" height="303" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1603980516018" />
+    <state width="1750" height="303" key="GridCell.Tab.0.left" timestamp="1603980516018">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="1750" height="303" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1603980516018" />
+    <state width="1750" height="303" key="GridCell.Tab.0.right" timestamp="1603980516019">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="1750" height="303" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1603980516019" />
+    <state width="1750" height="303" key="GridCell.Tab.1.bottom" timestamp="1603980516020">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="1750" height="303" key="GridCell.Tab.1.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1603980516020" />
+    <state width="1750" height="303" key="GridCell.Tab.1.center" timestamp="1603980516019">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="1750" height="303" key="GridCell.Tab.1.center/0.23.1792.1097@0.23.1792.1097" timestamp="1603980516019" />
+    <state width="1750" height="303" key="GridCell.Tab.1.left" timestamp="1603980516019">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="1750" height="303" key="GridCell.Tab.1.left/0.23.1792.1097@0.23.1792.1097" timestamp="1603980516019" />
+    <state width="1750" height="303" key="GridCell.Tab.1.right" timestamp="1603980516020">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="1750" height="303" key="GridCell.Tab.1.right/0.23.1792.1097@0.23.1792.1097" timestamp="1603980516020" />
+    <state x="594" y="204" width="604" height="735" key="find.popup" timestamp="1603979297716">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="594" y="204" width="604" height="735" key="find.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1603979297716" />
+    <state x="264" y="234" key="new project wizard" timestamp="1603980449570">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="264" y="234" key="new project wizard/0.23.1792.1097@0.23.1792.1097" timestamp="1603980449570" />
   </component>
 </project>
