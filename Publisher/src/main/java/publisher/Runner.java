@@ -1,14 +1,14 @@
 package publisher;
 
-import java.util.concurrent.TimeUnit;
-
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import java.util.logging.Logger;
+
 @Component
 public class Runner implements CommandLineRunner {
-
+    static final Logger logger = Logger.getLogger(Runner.class.getName());
     private final RabbitTemplate rabbitTemplate;
 
     public Runner(RabbitTemplate rabbitTemplate) {
@@ -17,9 +17,9 @@ public class Runner implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        System.out.println("Sending message...");
-        rabbitTemplate.convertAndSend(MessagingRabbitmqApplication.topicExchangeName, "foo.bar.baz", "Hello from Jonathan!");
-        rabbitTemplate.convertAndSend(MessagingRabbitmqApplication.topicExchangeName, "foo.bar.baz", "Hello from Jonathan2!");
+        logger.info("Sending message...");
+        rabbitTemplate.convertAndSend(MessagingRabbitmqApplication.TOPIC_EXCHANGE_NAME, "foo.bar.baz", "Hello from Jonathan!");
+        rabbitTemplate.convertAndSend(MessagingRabbitmqApplication.TOPIC_EXCHANGE_NAME, "foo.bar.baz", "Hello from Jonathan2!");
     }
 
 }

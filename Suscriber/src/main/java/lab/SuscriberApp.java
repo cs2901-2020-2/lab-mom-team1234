@@ -10,14 +10,14 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class SuscriberApp {
 
-    static final String queueName = "spring-boot";
+    static final String QUEUE_NAME = "spring-boot";
 
     @Bean
     SimpleMessageListenerContainer container(ConnectionFactory connectionFactory,
                                              MessageListenerAdapter listenerAdapter) {
         SimpleMessageListenerContainer container = new SimpleMessageListenerContainer();
         container.setConnectionFactory(connectionFactory);
-        container.setQueueNames(queueName);
+        container.setQueueNames(QUEUE_NAME);
         container.setMessageListener(listenerAdapter);
         return container;
     }
