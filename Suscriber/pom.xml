@@ -4,15 +4,15 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
+        <artifactId>lab11-suscriber-1234</artifactId>
         <version>2.3.2.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.publisher</groupId>
     <artifactId>lab11-suscriber-1234</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>rabbitmq-publisher</name>
-    <description>Demo project for Spring Boot</description>
+    <name>suscriber-rabitmq</name>
+    <description>Proyecto de Suscriber con RabitMq</description>
 
     <properties>
         <java.version>11</java.version>
