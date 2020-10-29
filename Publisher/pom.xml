@@ -11,7 +11,7 @@
     <groupId>com.publisher</groupId>
     <artifactId>lab11-publisher-1234</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>publisher-rabbitmq</name>
+    <name>lab-publisher-1234</name>
     <description>Proyecto de Publisher con RabitMq</description>
 
     <properties>
@@ -52,6 +52,11 @@
             <groupId>org.springframework.amqp</groupId>
             <artifactId>spring-rabbit-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.0.0-beta1</version>
         </dependency>
     </dependencies>
 
