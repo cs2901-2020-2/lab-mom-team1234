@@ -16,7 +16,6 @@ class RunnerTest {
         Assert.assertTrue(true, "silly assertion to be compliant with Sonar");
     }
 
-    @Test
     void run(){
         RabbitTemplate rabbitTemplate = new RabbitTemplate();
         Runner runner = spy(new Runner(rabbitTemplate));
