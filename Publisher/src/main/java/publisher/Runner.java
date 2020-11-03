@@ -2,8 +2,12 @@ package publisher;
 
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.cglib.core.Local;
 import org.springframework.stereotype.Component;
 
+import java.sql.Time;
+import java.time.LocalDateTime;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
 @Component
@@ -18,8 +22,11 @@ public class Runner implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         logger.info("Sending message...");
-        rabbitTemplate.convertAndSend(MessagingRabbitmqApplication.TOPIC_EXCHANGE_NAME, "foo.bar.baz", "Hello from Jonathan!");
-        rabbitTemplate.convertAndSend(MessagingRabbitmqApplication.TOPIC_EXCHANGE_NAME, "foo.bar.baz", "Hello from Jonathan2!");
+        LocalDateTime startTime = LocalDateTime.now();
+        while (LocalDateTime.now().getSecond () - startTime.getSecond() < 60) {
+            TimeUnit.MILLISECONDS.sleep (100);
+            rabbitTemplate.convertAndSend(MessagingRabbitmqApplication.TOPIC_EXCHANGE_NAME, "foo.bar.baz", "Hello from Jonathan!: " + LocalDateTime.now());
+        }
     }
 
 }

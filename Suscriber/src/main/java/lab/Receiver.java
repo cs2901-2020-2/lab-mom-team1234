@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Receiver {
     static final Logger logger = Logger.getLogger(Receiver.class.getName());
-    private CountDownLatch latch = new CountDownLatch(1);
+    private CountDownLatch latch = new CountDownLatch(5);
 
     public void receiveMessage(String message) {
         message = "Received: " + message;
