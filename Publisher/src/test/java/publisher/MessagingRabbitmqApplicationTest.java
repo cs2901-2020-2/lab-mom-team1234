@@ -1,14 +1,14 @@
 package publisher;
 
-import org.junit.jupiter.api.Test;
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
 import org.springframework.amqp.core.TopicExchange;
 import org.testng.Assert;
 
 import org.springframework.amqp.core.Queue;
+import org.testng.annotations.Test;
 
-
+@Test
 class MessagingRabbitmqApplicationTest {
 
     Queue initialQueue = new Queue("spring-boot", false);

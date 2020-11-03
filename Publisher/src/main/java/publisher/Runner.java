@@ -15,8 +15,12 @@ public class Runner implements CommandLineRunner {
         this.rabbitTemplate = rabbitTemplate;
     }
 
+    public RabbitTemplate getRabbitTemplate() {
+        return rabbitTemplate;
+    }
+
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... args) {
         logger.info("Sending message...");
         rabbitTemplate.convertAndSend(MessagingRabbitmqApplication.TOPIC_EXCHANGE_NAME, "foo.bar.baz", "Hello from Jonathan!");
         rabbitTemplate.convertAndSend(MessagingRabbitmqApplication.TOPIC_EXCHANGE_NAME, "foo.bar.baz", "Hello from Jonathan2!");
