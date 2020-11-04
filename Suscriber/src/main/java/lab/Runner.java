@@ -21,8 +21,9 @@ public class Runner implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        for (int i = 0; i < receivers.size(); i++)
-            receivers.get(i).getLatch().await(10000, TimeUnit.MILLISECONDS);
+        for (int i = 0; i < receivers.size(); i++) {
+            System.out.println("receiver : " + Integer.toString(i));
+            receivers.get(i).getLatch().await(100, TimeUnit.MILLISECONDS);
+        }
     }
-
 }

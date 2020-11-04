@@ -14,7 +14,6 @@ public class Receiver {
 
     public Receiver () {
         id = Receiver.idCount++;
-        logger.info("Created receiver with id: " + Integer.toString(id));
     }
 
     public void receiveMessage(String message) {

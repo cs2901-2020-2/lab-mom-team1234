@@ -27,7 +27,7 @@ public class SuscriberApp {
     }
 
     @Bean
-    MessageListenerAdapter listenerAdapter(Receiver receiver) {
+    MessageListenerAdapter listenerAdapter(ReceiverContainer receiver) {
         return new MessageListenerAdapter(receiver, "receiveMessage");
     }
 
