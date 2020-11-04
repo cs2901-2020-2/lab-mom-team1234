@@ -23,8 +23,8 @@ public class Runner implements CommandLineRunner {
     public void run(String... args) throws Exception {
         logger.info("Sending message...");
         LocalDateTime startTime = LocalDateTime.now();
-        while (LocalDateTime.now().getSecond () - startTime.getSecond() < 60) {
-            TimeUnit.MILLISECONDS.sleep (100);
+        while (LocalDateTime.now().getSecond() - startTime.getSecond() < 60) {
+            TimeUnit.MILLISECONDS.sleep(100);
             rabbitTemplate.convertAndSend(MessagingRabbitmqApplication.TOPIC_EXCHANGE_NAME, "foo.bar.baz", "Hello from Jonathan!: " + LocalDateTime.now());
         }
     }
